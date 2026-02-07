@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vivek Verma - Biotechnology Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Inter', sans-serif; }
+        .gradient-text { background: linear-gradient(135deg, #22c55e, #16a34a); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+        .card-hover { transition: all 0.3s ease; }
+        .card-hover:hover { transform: translateY(-4px); box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1); }
+        .section-padding { padding: 4rem 0; }
+        .fade-in { animation: fadeIn 0.6s ease-in; }
+        @keyframes fadeIn { from { opacity: 0; transform: translateY(20px); } to { opacity: 1; transform: translateY(0); } }
+    </style>
+</head>
+<body class="bg-white text-gray-900">
+    <!-- Navigation -->
+    <nav class="fixed top-0 w-full bg-white/95 backdrop-blur-sm shadow-md z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <h1 class="text-2xl font-bold gradient-text">Vivek Verma</h1>
+                <div class="hidden md:flex space-x-6">
+                    <a href="#home" class="text-gray-700 hover:text-green-600">Home</a>
+                    <a href="#about" class="text-gray-700 hover:text-green-600">About</a>
+                    <a href="#skills" class="text-gray-700 hover:text-green-600">Skills</a>
+                    <a href="#projects" class="text-gray-700 hover:text-green-600">Projects</a>
+                    <a href="#education" class="text-gray-700 hover:text-green-600">Education</a>
+                    <a href="#certifications" class="text-gray-700 hover:text-green-600">Certifications</a>
+                    <a href="#contact" class="text-gray-700 hover:text-green-600">Contact</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="min-h-screen flex items-center justify-center bg-gradient-to-br from-green-50 to-white pt-16">
+        <div class="max-w-7xl mx-auto px-4 text-center fade-in">
+            <h1 class="text-4xl md:text-6xl font-bold mb-6">
+                Hi, I'm <span class="gradient-text">Vivek Verma</span>
+            </h1>
+            <h2 class="text-2xl md:text-3xl text-gray-700 mb-6">
+                Biotechnology Student | Research Enthusiast
+            </h2>
+            <p class="text-lg text-gray-600 mb-8 max-w-2xl mx-auto">
+                Passionate about molecular biology, bioinformatics, and innovative biotechnology research.
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <a href="#projects" class="bg-green-600 text-white px-6 py-3 rounded-lg hover:bg-green-700">
+                    View Projects
+                </a>
+                <a href="#contact" class="border-2 border-green-600 text-green-600 px-6 py-3 rounded-lg hover:bg-green-600 hover:text-white">
+                    Contact Me
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section-padding">
+        <div class="max-w-7xl mx-auto px-4">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-12">About Me</h2>
+            <div class="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+                <div>
+                    <h3 class="text-2xl font-semibold mb-4">Academic Background</h3>
+                    <p class="text-gray-600 mb-4">
+                        Currently pursuing Bachelor's in Biotechnology with strong foundation in molecular biology, genetics, and biochemistry.
+                    </p>
+                    <p class="text-gray-600">
+                        Fascinated by intersection of biotechnology and computational biology, seeking to leverage data analysis tools.
+                    </p>
+                </div>
+                <div class="space-y-4">
+                    <div class="flex items-start">
+                        <div class="w-6 h-6 bg-green-600 rounded-full mr-3 mt-1"></div>
+                        <div>
+                            <h4 className="font-semibold">Research Focus</h4>
+                            <p className="text-gray-600">Molecular biology, genetic engineering, protein analysis</p>
+                        </div>
+                    </div>
+                    <div class="flex items-start">
+                        <div class="w-6 h-6 bg-green-600 rounded-full mr-3 mt-1"></div>
+                        <div>
+                            <h4 className="font-semibold">Technical Interests</h4>
+                            <p className="text-gray-600">Bioinformatics, data analysis, computational modeling</p>
+                        </div>
+                    </div>
+                    <div class="flex items-start">
+                        <div class="w-6 h-6 bg-green-600 rounded-full mr-3 mt-1"></div>
+                        <div>
+                            <h4 className="font-semibold">Career Goals</h4>
+                            <p className="text-gray-600">Research scientist in biotech industry or higher studies</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="section-padding bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-12">Skills & Expertise</h2>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-white p-6 rounded-xl shadow-lg card-hover">
+                    <h3 class="text-xl font-semibold mb-4">Lab Skills</h3>
+                    <ul class="space-y-2">
+                        <li class="flex items-center"><span class="text-green-500 mr-2">✓</span> PCR and DNA sequencing</li>
+                        <li class="flex items-center"><span class="text-green-500 mr-2">✓</span> Cell culture techniques</li>
+                        <li class="flex items-center"><span class="text-green-500 mr-2">✓</span> Microscopy and imaging</li>
+                        <li class="flex items-center"><span class="text-green-500 mr-2">✓</span> Protein purification</li>
+                    </ul>
+                </div>
+                <div class="bg-white p-6 rounded-xl shadow-lg card-hover">
+                    <h3 class="text-xl font-semibold mb-4">Technical Skills</h3>
+                    <ul class="space-y-2">
+                        <li class="flex items-center"><span class="text-green-500 mr-2">✓</span> Python for data analysis</li>
+                        <li class="flex items-center"><span class="text-green-500 mr-2">✓</span> Advanced Excel & statistics</li>
+                        <li class="flex items-center"><span class="text-green-500 mr-2">✓</span> Bioinformatics tools</li>
+                        <li class="flex items-center"><span class="text-green-500 mr-2">✓</span> Laboratory information systems</li>
+                    </ul>
+                </div>
+                <div class="bg-white p-6 rounded-xl shadow-lg card-hover">
+                    <h3 class="text-xl font-semibold mb-4">Soft Skills</h3>
+                    <ul class="space-y-2">
+                        <li class="flex items-center"><span class="text-green-500 mr-2">✓</span> Analytical thinking</li>
+                        <li class="flex items-center"><span class="text-green-500 mr-2">✓</span> Team collaboration</li>
+                        <li class="flex items-center"><span class="text-green-500 mr-2">✓</span> Scientific communication</li>
+                        <li class="flex items-center"><span class="text-green-500 mr-2">✓</span> Problem-solving</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section-padding">
+        <div class="max-w-7xl mx-auto px-4">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-12">Projects & Research</h2>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <div class="bg-white p-6 rounded-xl shadow-lg card-hover">
+                    <h3 class="text-xl font-semibold mb-2">Gene Expression Analysis</h3>
+                    <p class="text-gray-600 mb-3">Analyzed differential gene expression in cancer cells using RNA-seq data.</p>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="px-2 py-1 bg-green-100 text-green-700 text-xs rounded">Python</span>
+                        <span class="px-2 py-1 bg-green-100 text-green-700 text-xs rounded">R</span>
+                        <span class="px-2 py-1 bg-green-100 text-green-700 text-xs rounded">DESeq2</span>
+                    </div>
+                </div>
+                <div class="bg-white p-6 rounded-xl shadow-lg card-hover">
+                    <h3 class="text-xl font-semibold mb-2">Protein Structure Prediction</h3>
+                    <p class="text-gray-600 mb-3">Utilized ML algorithms to predict 3D protein structures from sequences.</p>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="px-2 py-1 bg-green-100 text-green-700 text-xs rounded">Python</span>
+                        <span class="px-2 py-1 bg-green-100 text-green-700 text-xs rounded">TensorFlow</span>
+                        <span class="px-2 py-1 bg-green-100 text-green-700 text-xs rounded">AlphaFold</span>
+                    </div>
+                </div>
+                <div class="bg-white p-6 rounded-xl shadow-lg card-hover">
+                    <h3 class="text-xl font-semibold mb-2">Microbial Bioremediation</h3>
+                    <p class="text-gray-600 mb-3">Isolated bacterial strains capable of degrading environmental pollutants.</p>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="px-2 py-1 bg-green-100 text-green-700 text-xs rounded">Microbiology</span>
+                        <span class="px-2 py-1 bg-green-100 text-green-700 text-xs rounded">PCR</span>
+                        <span class="px-2 py-1 bg-green-100 text-green-700 text-xs rounded">HPLC</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section-padding bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-12">Get In Touch</h2>
+            <div class="max-w-2xl mx-auto text-center">
+                <p class="text-gray-600 mb-8">
+                    I'm always interested in connecting with fellow researchers and industry professionals.
+                </p>
+                <div class="space-y-4">
+                    <p class="flex items-center justify-center">
+                        <span class="text-green-600 mr-2">📧</span> vivek.verma@example.com
+                    </p>
+                    <p class="flex items-center justify-center">
+                        <span class="text-green-600 mr-2">📱</span> +91 98765 43210
+                    </p>
+                    <p class="flex items-center justify-center">
+                        <span class="text-green-600 mr-2">📍</span> City, State, India
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-8">
+        <div class="max-w-7xl mx-auto px-4 text-center">
+            <h3 class="text-2xl font-bold gradient-text mb-4">Vivek Verma</h3>
+            <p class="text-gray-400 mb-4">
+                © 2024 Vivek Verma. All rights reserved.
+            </p>
+            <p class="text-gray-500 text-sm">
+                Built with HTML, Tailwind CSS, and passion for biotechnology
+            </p>
+        </div>
+    </footer>
+
+    <script>
+        // Smooth scrolling
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>
